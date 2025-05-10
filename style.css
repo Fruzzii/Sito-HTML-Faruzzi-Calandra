@@ -1,0 +1,74 @@
+.fruzzi{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+      text-align: left;
+      padding: 20px;
+      background-color: #171c4b;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      margin: 0px;
+      padding-left: 2%;
+      padding-right: 15%;
+      border: 0 auto;
+      height: 120px;
+      justify-content: space-between;
+      position: fixed;
+    }
+    .fruzzi p a {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif, cursive;
+      font-size: 20px;
+    }
+    .fruzzi p a:hover {
+      color: #6176bc;
+      cursor: pointer;
+    }
+    .fruzzi img {
+      width: 40%;
+      height: auto;
+      flex: 0 0 40%;
+      padding-left: 5%;
+      
+    }
+    .fruzzi p{
+      font-size: 20px;
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif, cursive;
+    }
+    .fruzzi p:hover{
+      color: #6176bc;
+      cursor: pointer;
+    }
+    .fruzzi p:nth-child(4) {
+      background-image: url(img/italia.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 40px 20px;
+      /* padding-left: 20px;
+      padding-right: 8px; */
+      text-align: right;
+      line-height: 1;
+    }
+    .fruzzi p:nth-child(5) {
+      background-image: url(img/utente.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      /* padding-left: 20px;
+      padding-right: 22px; */
+      text-align: right;
+      line-height: 1;
+    }
+
+  .fruzzi p:nth-child(2) {
+    flex: 0 0 22%;
+  }
+  .fruzzi p:nth-child(3),
+  .fruzzi p:nth-child(4),
+  .fruzzi p:nth-child(5) {
+    flex: 0 0 7%;
+    text-align: right;
+  }
