@@ -131,6 +131,123 @@ body {
     object-fit: cover;
 
   }
+  .destinazioni {
+      display: flex;
+      flex-direction: column; 
+      gap: 30px; 
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  .contenuto {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      text-align: left;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      
+    }
+    .contenuto p{
+      font-size: 24px;
+      color: #333;
+      font-family: 'Raleway', sans-serif, cursive;
+    }
+    .contenuto p strong {
+      color: #000000; 
+      font-size: 40px;
+    }
+    .contenuto em {
+      color: #555;
+      font-style: italic;
+      font-size: 14px;
+    }
+    .immagini {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .immagine-principale {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+    .immagine-principale:hover {
+      transform: scale(1.05); 
+    }
+    
+    .immagini-secondarie {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .immagine-secondaria {
+      width: 145px;
+      height: auto;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .immagine-secondaria:hover {
+      transform: scale(1.05); /* Effetto zoom al passaggio del mouse */
+    }
+
+    .dettagli {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+    .dettagli p {
+      font-size: 21px;
+      color: #000000;
+      font-family: 'Raleway', sans-serif, cursive;
+    }
+
+    .dettagli a{
+      color: #6176bc; 
+      font-size: 40px;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif, cursive;
+      font-weight: bold;   
+    }
+   
+    .dettagli p:last-child {
+      text-align: right;
+
+    }
+    .dettagli p:nth-child(2) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .prezzo-badge {
+    background-color: #6176bc; 
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  .mantieni-misure{
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .mantieni-misure img {
+    display: block;
+  }
   .trovato {
       text-align: center;
       margin: 50px 0;
