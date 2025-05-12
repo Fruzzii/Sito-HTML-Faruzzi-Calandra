@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Prenota il tuo viaggio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="fruzzi">
+    <img src="img/logo.png" alt="">
+    <p></p>
+    <p><a href="Swipetrip.html">SwipeTrip</a></p>
+    <p>Italiano</p>
+    <p>Accedi</p>
+  </header>
+  <main>
+    <div class="riga">
+      <p></p>
+      <p>Lasciati ispirare</p>
+      <p>Trova agenzia</p>
+      <p>Consulenza online</p>
+      <p>Gift card</p>
+      <p>Gift box</p>
+      <p></p>
+    </div>
+
+    <img src="img/header.jpg" alt="" class="immagine_iniziale">
+    <section id="localita-risultato"></section>
+  </main>
+  <script>
+    
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const risultatiString = urlParams.get('risultati');
+      
+      if (risultatiString) {
+        const risultati = JSON.parse(decodeURIComponent(risultatiString));
+        const output = document.getElementById("localita-risultato");
+
+        let html = "<p class='disponibili'>Località disponibili:</p><section class='posti'>";
+        
+        risultati.forEach((loc,index) => {
+          const carouselId = `carousel${index}`;
+          html += `
+            <div class="posto">
+              <div class="immaginiposti-carousel">
+                <div class="carousel-wrapper">
+                  <div class="carousel" id="${carouselId}">
+                    <img src="${loc.immagine}" alt="${loc.nome}">
+                    <img src="${loc.immagine2}" alt="${loc.nome}">
+                    <img src="${loc.immagine3}" alt="${loc.nome}">
+                  </div>
+                </div>
+                <div class="carousel-controls">
+                  <button onclick="prevSlide('${carouselId}')">❰</button>
+                  <button onclick="nextSlide('${carouselId}')">❱</button>
+                </div>
+              </div>
+              <div class="dettagli">
+                <p><strong>${loc.citta}</strong></p>
+                <p><strong>${loc.nome}</strong></p>
+                <p>${loc.descrizione}</p>
+                <p>${loc.host}</p>
+                <p><span class="prezzo-badge">💶 €${loc.prezzo} a notte</span></p>
+                <p><em>Disponibile: ${loc.disponibilita}</em></p>
+                <button class="bottone-prenota" onclick="prenota('${loc.nome}')">Prenota</button>
+              </div>
+            </div>
+          `;
+        });
+
+        html += "</section>";
+        output.innerHTML = html;
+      }
+    };
+
+    function prenota(nomeLocalita) {
+      const urlParams = new URLSearchParams(window.location.search);
+      const startDate = urlParams.get("start");
+      const endDate = urlParams.get("end");
+
+      if (!startDate || !endDate) {
+        alert("Date non trovate. Ritorna alla pagina precedente e seleziona le date.");
+        return;
+      }
+
+      const url = `prenota.html?localita=${encodeURIComponent(nomeLocalita)}&start=${encodeURIComponent(startDate)}&end=${encodeURIComponent(endDate)}`;
+      window.location.href = url;
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+    }
+  </script>
+  <script>
+    let currentIndex = {};
+
+    function nextSlide(id) {
+      const carousel = document.getElementById(id);
+      const slides = carousel.querySelectorAll("img");
+      const totalSlides = slides.length;
+
+      currentIndex[id] = (currentIndex[id] || 0) + 1;
+      if (currentIndex[id] >= totalSlides) currentIndex[id] = 0;
+
+      carousel.style.transform = `translateX(-${currentIndex[id] * 100}%)`;
+    }
+
+    function prevSlide(id) {
+      const carousel = document.getElementById(id);
+      const slides = carousel.querySelectorAll("img");
+      const totalSlides = slides.length;
+
+      currentIndex[id] = (currentIndex[id] || 0) - 1;
+      if (currentIndex[id] < 0) currentIndex[id] = totalSlides - 1;
+
+      carousel.style.transform = `translateX(-${currentIndex[id] * 100}%)`;
+    }
+  </script>
+  
+  
+</body>
+</html>
