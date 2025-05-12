@@ -1,5 +1,9 @@
 *{box-sizing: border-box;}
+html, body {
+  overflow-x: hidden;
+}
 body {
+  
     font-family: sans-serif;
     background: #d4eefc;
     display: flex;
@@ -95,13 +99,14 @@ body {
   }
   .riga{
     background-color: white;
-    height: 30px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     gap:20px;
+    justify-content: space-between;
     
   }
   .riga p{
@@ -113,7 +118,7 @@ body {
     cursor: pointer;
   }
   .riga p:nth-child(1){
-    flex: 0 0 50%;
+    flex: 0 0 45%;
   }
   .riga p:nth-child(2),
   .riga p:nth-child(3),
@@ -153,6 +158,9 @@ body {
     font-size: 1em;
     cursor: pointer;
     border-radius: 5px;
+  }
+  .date button:hover {
+    background-color: #6176bc;
   }
   .date h2{
     color:white
@@ -320,4 +328,147 @@ body {
     font-size: 2em;
     margin-bottom: 20px;
   }
+.hamburger {
+  display: none;
+}
 
+.fruzzi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171c4b;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 120px;
+  padding-right: 8%;
+}
+
+.logo img {
+  height: auto;
+}
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a,
+.menu ul li {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.menu ul li:hover {
+  color: #6176bc;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+.mobile-only {
+  display: none;
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  *{box-sizing: border-box;}
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #22285f;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    align-items: center;
+  }
+  .riga{
+    display: none;
+  }
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .menu ul li {
+    padding: 10px 0;
+  }
+   .mobile-only {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #22285f;
+    align-items: center;
+  }
+  .mobile-only p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding-bottom: 5px;}
+    
+    .fruzzi p:nth-child(4) {
+      background-image: none;
+    }
+    .fruzzi p:nth-child(5) {
+      background-image: none;  
+    }
+    .destinazioni{
+      width: 100%;
+      
+    }
+    .contenuto {
+      box-sizing: border-box;
+      width: 95%;
+      padding: 5px 4px;
+      margin: 5px;
+    }
+    .contenuto p {
+      font-size: 18px;
+    }
+    .contenuto p strong {
+      font-size: 30px;
+    }
+    .immagine-principale {
+      width: 100%;
+      height: auto;
+    }
+    .immagine-secondaria {
+      width: 100%;
+      height: auto;
+    }
+    .dettagli{
+      padding: 5px 2px;
+    }
+
+    
+    
+}
