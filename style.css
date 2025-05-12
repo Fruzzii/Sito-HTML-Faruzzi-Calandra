@@ -131,6 +131,35 @@ body {
     object-fit: cover;
 
   }
+  .date {
+    text-align: center;
+    padding: 30px;
+    background-color: #171c4b;
+    width: 100%;
+  }
+  
+  .date input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .date button {
+    padding: 10px 20px;
+    background-color: #7b90d5;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .date h2{
+    color:white
+  }
+  .date label{
+    color:white
+  }
   .destinazioni {
       display: flex;
       flex-direction: column; 
