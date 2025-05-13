@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Prenotazione</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    label, input {
+      display: block;
+      margin: 10px 0;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+    .input-group label {
+      margin-bottom: 0.25rem;
+      font-weight: 500;
+      color: #333;
+    }
+  </style>
+  <script src="script_date.js"></script>
+</head>
+<body>
+
+  <p class="titoletto"><strong>Prenotazione per <span id="nomeLocalita">...</span></strong></p>
+
+
+  <section class="destinazioni">
+    <div class="contenuto">
+      <div class="immagini">
+        <img id="immagineLocalita" src="" alt="Immagine Località" class="immagine-principale" />
+      </div>
+      
+      <div class="prenotazione-info">
+        <p><span id="descrizioneLocalita">...</span></p>
+        <p>Host: <span id="hostLocalita">...</span></p>
+        <p>Costo per notte: <span class="prezzo-badge">€<span id="prezzoLocalita">...</span></span></p>
+        <p>Numero di giorni: <span id="numeroGiorni">...</span></p>
+        <p>Costo totale: <span class="prezzo-badge">€<span id="costoTotale">...</span></span></p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Modulo di prenotazione con campi aggiuntivi per Nome e Cognome -->
+  <form id="formPrenotazione">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" required>
+
+    <button type="submit">Conferma Prenotazione</button>
+  </form>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Estrae i parametri dall'URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const nomeLocalitaParam = urlParams.get('localita');
+      const startDate = new Date(urlParams.get('start'));
+      const endDate = new Date(urlParams.get('end'));
+
+      // Verifica che i parametri siano presenti
+      if (!nomeLocalitaParam || !startDate || !endDate) {
+        alert("Dati incompleti. Riprova.");
+        window.location.href = "index.html";
+        return;
+      }
+
+      // Trova la località selezionata nell'array definito in script_date.js
+      const localitaSelezionata = localitaDisponibili.find(loc => loc.nome === nomeLocalitaParam);
+
+      if (localitaSelezionata) {
+        // Visualizza i dettagli della località
+        document.getElementById('nomeLocalita').textContent = localitaSelezionata.nome;
+        document.getElementById('immagineLocalita').src = localitaSelezionata.immagine;
+        document.getElementById('immagineLocalita').alt = localitaSelezionata.nome;
+        document.getElementById('descrizioneLocalita').textContent = localitaSelezionata.descrizione;
+        document.getElementById('hostLocalita').textContent = localitaSelezionata.host;
+        document.getElementById('prezzoLocalita').textContent = localitaSelezionata.prezzo;
+
+        // Calcola il numero di giorni
+        const numeroGiorni = Math.ceil((endDate - startDate) / (1000 * 3600 * 24));
+        document.getElementById('numeroGiorni').textContent = numeroGiorni;
+
+        // Calcola il costo totale
+        const costoTotale = localitaSelezionata.prezzo * numeroGiorni;
+        document.getElementById('costoTotale').textContent = costoTotale.toFixed(2);
+      } else {
+        alert("Località non trovata.");
+        return;
+      }
+
+      // Gestione del submit del form
+      document.getElementById('formPrenotazione').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Recupera e valida nome e cognome
+        const nomeUtente = document.getElementById('nome').value.trim();
+        const cognomeUtente = document.getElementById('cognome').value.trim();
+
+        if (!nomeUtente || !cognomeUtente) {
+          alert("Per favore, inserisci nome e cognome per confermare la prenotazione.");
+          return;
+        }
+
+        // Recupera le prenotazioni già salvate oppure inizializza un array vuoto
+        const prenotazioni = JSON.parse(localStorage.getItem('prenotazioni')) || [];
+
+        // Aggiunge la nuova prenotazione con nome, cognome, località, numero giorni e costo totale
+        const numeroGiorniVal = document.getElementById('numeroGiorni').textContent;
+        const costoTotaleVal = document.getElementById('costoTotale').textContent;
+
+        prenotazioni.push({
+          localita: nomeLocalitaParam,
+          giorni: numeroGiorniVal,
+          costoTotale: costoTotaleVal,
+          nome: nomeUtente,
+          cognome: cognomeUtente
+        });
+
+        // Salva l'array aggiornato in localStorage
+        localStorage.setItem('prenotazioni', JSON.stringify(prenotazioni));
+
+        alert(`Prenotazione per ${nomeLocalitaParam} (${nomeUtente} ${cognomeUtente}) di ${numeroGiorniVal} giorni al costo totale di €${costoTotaleVal} salvata!`);
+
+        // Reindirizza alla pagina riepilogo
+        window.location.href = "riepilogo.html";
+      });
+    });
+  </script>
+</body>
+</html>
