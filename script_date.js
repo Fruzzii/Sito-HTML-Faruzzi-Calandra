@@ -87,7 +87,8 @@ const localitaDisponibili = [
       descrizione: "Eleganza classica a due passi dagli Champs-Élysées, perfetto per una vacanza romantica.",
       host: "Marie Dupont",
       prezzo: 330,
-      disponibilita: "1 Gennaio - 31 Maggio 2025"
+      disponibilita: "1 Gennaio - 31 Maggio 2025",
+      citta: "Parigi"
     },
     {
       nome: "Hotel Belvedere",
@@ -99,7 +100,8 @@ const localitaDisponibili = [
       descrizione: "Alloggio moderno con vista sulla Torre Eiffel e facile accesso ai musei principali.",
       host: "Jacques Moreau",
       prezzo: 275,
-      disponibilita: "20 Aprile - 30 Novembre 2025"
+      disponibilita: "20 Aprile - 30 Novembre 2025",
+      citta: "Parigi"
     },
     {
       nome: "Hotel Lafayette",
@@ -111,7 +113,8 @@ const localitaDisponibili = [
       descrizione: "Un’esperienza luminosa nel cuore del Marais, tra boutique e bistrot parigini.",
       host: "Claude Bernard",
       prezzo: 350,
-      disponibilita: "4 Marzo - 31 Dicembre 2025"
+      disponibilita: "4 Marzo - 31 Dicembre 2025",
+      citta: "Parigi"
     },
     {
       nome: "Hotel Etoile",
@@ -123,7 +126,8 @@ const localitaDisponibili = [
       descrizione: "Camere raffinate nel quartiere dell’Arco di Trionfo, ideale per esplorare la città a piedi.",
       host: "Elise Girard",
       prezzo: 235,
-      disponibilita: "1 Febbraio - 31 Agosto 2025"
+      disponibilita: "1 Febbraio - 31 Agosto 2025",
+      citta: "Parigi"
     },
     {
       nome: "Hotel Peyris Opera",
@@ -135,7 +139,8 @@ const localitaDisponibili = [
       descrizione: "Incantevole soggiorno sulla collina degli artisti, vicino alla Basilica del Sacro Cuore.",
       host: "Victor Lefevre",
       prezzo: 400,
-      disponibilita: "20 Aprile - 30 Settembre"
+      disponibilita: "20 Aprile - 30 Settembre",
+      citta: "Parigi"
     },
     {
       nome: "Hotel Parisian",
@@ -147,7 +152,8 @@ const localitaDisponibili = [
       descrizione: "Accogliente sistemazione vicino al Louvre e alla Senna, perfetta per amanti della cultura.",
       host: "Isabelle Petit",
       prezzo: 350,
-      disponibilita: "1 Gennaio - 31 Dicembre 2025"
+      disponibilita: "1 Gennaio - 31 Dicembre 2025",
+      citta: "Parigi"
     },
     
     {
@@ -160,7 +166,8 @@ const localitaDisponibili = [
       descrizione: "Romantico rifugio con terrazza sul mare e accesso ai tipici vicoli di Fira.",
       host: "Nikos Papadopoulos",
       prezzo: 250,
-      disponibilita: "10 Aprile - 15 Settembre 2025"
+      disponibilita: "10 Aprile - 15 Settembre 2025",
+      citta: "Santorini"
     },
     {
       nome: "Oia Blue View",
@@ -172,7 +179,8 @@ const localitaDisponibili = [
       descrizione: "Panorama impareggiabile sulla Caldera direttamente da una villa tradizionale.",
       host: "Maria Konstantinou",
       prezzo: 290,
-      disponibilita: "1 Giugno - 30 Settembre 2025"
+      disponibilita: "1 Giugno - 30 Settembre 2025",
+      citta: "Santorini"
     },
     {
       nome: "Caldera Retreat",
@@ -184,7 +192,8 @@ const localitaDisponibili = [
       descrizione: "Ritiro esclusivo con piscina a sfioro, ideale per una fuga nel lusso.",
       host: "Alexandros Markakis",
       prezzo: 240,
-      disponibilita: "30 Giugno - 31 Agosto 2025"
+      disponibilita: "30 Giugno - 31 Agosto 2025",
+      citta: "Santorini"
     },
     {
       nome: "Aegean Horizon",
@@ -196,7 +205,8 @@ const localitaDisponibili = [
       descrizione: "Vista infinita sull’Egeo da ogni finestra, perfetta per ammirare l’alba.",
       host: "Elena Vasilakis",
       prezzo: 220,
-      disponibilita: "1 Marzo - 20 Settembre 2025"
+      disponibilita: "1 Marzo - 20 Settembre 2025",
+      citta: "Santorini"
     },
     {
       nome: "Sunset Villas",
@@ -208,7 +218,8 @@ const localitaDisponibili = [
       descrizione: "Alloggio suggestivo a picco sul mare, perfetto per tramonti indimenticabili.",
       host: "Yiannis Papadakis",
       prezzo: 315,
-      disponibilita: "15 Maggio - 10 Settembre 2025"
+      disponibilita: "15 Maggio - 10 Settembre 2025",
+      citta: "Santorini"
     },
     {
       nome: "Santorini Escape",
@@ -220,7 +231,8 @@ const localitaDisponibili = [
       descrizione: "Eleganza cicladica e tranquillità, immersa nella quiete dell’isola.",
       host: "Katerina Nikolaou",
       prezzo: 195,
-      disponibilita: "1 Luglio - 31 Agosto 2025"
+      disponibilita: "1 Luglio - 31 Agosto 2025",
+      citta: "Santorini"
     },
     {
       nome: "Hotel New York",
@@ -232,7 +244,8 @@ const localitaDisponibili = [
       descrizione: "Case bianche, cupole blu e tramonti mozzafiato sull’Egeo.",
       host: "Thomas Harrison",
       prezzo: 515,
-      disponibilita: "20 Maggio - 05 Novembre 2025"
+      disponibilita: "20 Maggio - 05 Novembre 2025",
+      citta: "New York"
     },
     {
       nome: "Manhattan Loft",
@@ -244,7 +257,8 @@ const localitaDisponibili = [
       descrizione: "Appartamenti eleganti nel cuore pulsante di Manhattan, vicino a tutte le principali attrazioni.",
       host: "Jonathan Taylor",
       prezzo: 400,
-      disponibilita: "15 Giugno - 05 Ottobre 2025"
+      disponibilita: "15 Giugno - 05 Ottobre 2025",
+      citta: "New York"
     },
     {
       nome: "Brooklyn Heights Retreat",
@@ -256,7 +270,8 @@ const localitaDisponibili = [
       descrizione: "Un rifugio tranquillo con vista sullo skyline di Manhattan e sulla Brooklyn Bridge.",
       host: "Amanda Richards",
       prezzo: 390,
-      disponibilita: "1 Gennaio - 30 Settembre 2025"
+      disponibilita: "1 Gennaio - 30 Settembre 2025",
+      citta: "New York"
     },
     {
       nome: "Central Park Apartments",
@@ -268,7 +283,8 @@ const localitaDisponibili = [
       descrizione: "Elegante appartamento con vista spettacolare su Central Park.",
       host: "David Cohen",
       prezzo: 300,
-      disponibilita: "25 Aprile - 15 Dicembre 2025"
+      disponibilita: "25 Aprile - 15 Dicembre 2025",
+      citta: "New York"
     },
     {
       nome: "Soho Design Studio",
@@ -280,7 +296,8 @@ const localitaDisponibili = [
       descrizione: "Appartamento di design nel quartiere più trendy di New York, a pochi passi da gallerie e negozi di tendenze.",
       host: "Emily Johnson",
       prezzo: 450,
-      disponibilita: "01 Marzo - 20 Ottobre 2025"
+      disponibilita: "01 Marzo - 20 Ottobre 2025",
+      citta: "New York"
     },
     {
       nome: "Times Square Luxury",
@@ -292,7 +309,8 @@ const localitaDisponibili = [
       descrizione: "Lusso e comfort nel cuore di Times Square, a pochi passi da teatri e ristoranti di classe mondiale.",
       host: "Sophia Williams",
       prezzo: 700,
-      disponibilita: "10 Giugno - 30 Settembre 2025"
+      disponibilita: "10 Giugno - 30 Settembre 2025",
+      citta: "New York"
     },
     {
       nome: "Hotel Kyoto",
@@ -304,7 +322,8 @@ const localitaDisponibili = [
       descrizione: "Lusso e comfort nel cuore di Kyoto, a pochi passi da teatri e ristoranti di classe mondiale.",
       host: "Kim Hokamotio",
       prezzo: 290,
-      disponibilita: "10 Febbraio - 30 Agosto 2025"
+      disponibilita: "10 Febbraio - 30 Agosto 2025",
+      citta: "Kyoto"
     },
     {
       nome: "Zen Garden Villa",
@@ -316,7 +335,8 @@ const localitaDisponibili = [
       descrizione: "Un rifugio tranquillo con vista sul giardino zen, per una pausa di pace e serenità.",
       host: "Hiroshi Tanaka",
       prezzo: 250,
-      disponibilita: "20 Maggio - 10 Dicembre 2025"
+      disponibilita: "20 Maggio - 10 Dicembre 2025",
+      citta: "Kyoto"
     },
     {
       nome: "Kiyomizu View House",
@@ -328,7 +348,8 @@ const localitaDisponibili = [
       descrizione: "Casa elegante con vista spettacolare sul famoso tempio di Kiyomizu.",
       host: "Yuki Sato",
       prezzo: 210,
-      disponibilita: "1 Settembre - 31 Dicembre 2025"
+      disponibilita: "1 Settembre - 31 Dicembre 2025",
+      citta: "Kyoto"
     },
     {
       nome: "Kyoto Traditional Home",
@@ -340,7 +361,8 @@ const localitaDisponibili = [
       descrizione: "Vivi l'autentica cultura giapponese in una casa tradizionale con tatami e futon.",
       host: "Mika Nakamura",
       prezzo: 195,
-      disponibilita: "5 Gennaio - 30 Giugno 2025"
+      disponibilita: "5 Gennaio - 30 Giugno 2025",
+      citta: "Kyoto"
     },
     {
       nome: "Popi Residence Village",
@@ -352,7 +374,8 @@ const localitaDisponibili = [
       descrizione: "Elegante residenza nel quartiere storico di Gion, vicino a tradizionali case da tè e templi.",
       host: "Haruto Fujimoto",
       prezzo: 280,
-      disponibilita: "15 Maggio - 05 Settembre 2025"
+      disponibilita: "15 Maggio - 05 Settembre 2025",
+      citta: "Kyoto"
     },
     {
       nome: "Arashiyama Retreat",
@@ -364,7 +387,8 @@ const localitaDisponibili = [
       descrizione: "Un rifugio immerso nella natura di Arashiyama, famosa per il bosco di bambù e i templi storici.",
       host: "Nao Yamada",
       prezzo: 260,
-      disponibilita: "01 Agosto - 20 Dicembre 2025"
+      disponibilita: "01 Agosto - 20 Dicembre 2025",
+      citta: "Kyoto"
     },
     {
       nome: "Monti Bormio",
@@ -376,7 +400,8 @@ const localitaDisponibili = [
       descrizione: "Un rifugio immerso nella natura di Arashiyama, famosa per il bosco di bambù e i templi storici.",
       host: "Leonardo Rossi",
       prezzo: 250,
-      disponibilita: "1 Maggio - 30 Giugno 2025"
+      disponibilita: "1 Maggio - 30 Giugno 2025",
+      citta: "Bormio"
     },
     {
       nome: "Valle Serpentina",
@@ -388,7 +413,8 @@ const localitaDisponibili = [
       descrizione: "Accogliente chalet di montagna circondato dai colori autunnali delle Alpi lombarde.",
       host: "Giulia Benedetti",
       prezzo: 245,
-      disponibilita: "1 Gennaio - 25 Luglio 2025"
+      disponibilita: "1 Gennaio - 25 Luglio 2025",
+      citta: "Bormio"
     },
     {
       nome: "Alba Silvana",
@@ -400,7 +426,8 @@ const localitaDisponibili = [
       descrizione: "Dimora rustica immersa nei boschi, ideale per un soggiorno rilassante tra la nebbia novembrina.",
       host: "Martina Colombo",
       prezzo: 320,
-      disponibilita: "15 Settembre - 31 Dicembre 202"
+      disponibilita: "15 Settembre - 31 Dicembre 2025",
+      citta: "Bormio"
     },
     {
       nome: "Sorgente Nascosta",
@@ -412,7 +439,8 @@ const localitaDisponibili = [
       descrizione: "Casa di montagna con vista sulle sorgenti termali innevate, perfetta per l'inverno.",
       host: "Riccardo Greco",
       prezzo: 290,
-      disponibilita: "1 Aprile - 20 Novembre 2025"
+      disponibilita: "1 Aprile - 20 Novembre 2025",
+      citta: "Bormio"
     },
     {
       nome: "Luna di Bormio",
@@ -424,7 +452,8 @@ const localitaDisponibili = [
       descrizione: "Un appartamento elegante con camino, perfetto per le serate fredde sotto la luna alpina.",
       host: "Elena Moretti",
       prezzo: 270,
-      disponibilita: "1 Gennaio - 20 Giugno 2025"
+      disponibilita: "1 Gennaio - 20 Giugno 2025",
+      citta: "Bormio"
     },
     {
       nome: "Stella d’Inverno",
@@ -436,191 +465,207 @@ const localitaDisponibili = [
       descrizione: "Rifugio moderno con ampie vetrate affacciate sulle piste da sci di Bormio.",
       host: "Tommaso Vitali",
       prezzo: 410,
-      disponibilita: "15 Maggio - 30 Settembre 2025"
+      disponibilita: "15 Maggio - 30 Settembre 2025",
+      citta: "Bormio"
     },
     {
       nome: "Hotel Roma",
-      inizio: new Date("2026-02-01"),
-      fine: new Date("2026-02-20"),
+      inizio: new Date("2025-02-01"),
+      fine: new Date("202-08-20"),
       immagine: "img/roma/casa1a.jpg",
       immagine2: "img/roma/casa1b.jpg",
       immagine3: "img/roma/casa1c.jpg",
       descrizione: "Rifugio moderno con ampie vetrate affacciate sulle piste da sci di Bormio.",
       host: "Tommaso Vitali",
-      prezzo: 200,
-      disponibilita: "1 – 20 febbraio 2026"
+      prezzo: 250,
+      disponibilita: "1 Febbraio – 20 Agosto 2025",
+      citta: "Roma"
     },
     {
-      nome: "Hotel Venezia",
-      inizio: new Date("2026-03-01"),
-      fine: new Date("2026-03-20"),
+      nome: "Hotel Luxury",
+      inizio: new Date("2025-03-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/roma/casa2a.jpg",
       immagine2: "img/roma/casa2b.jpg",
       immagine3: "img/roma/casa2c.jpg",
       descrizione: "Elegante residenza con terrazza panoramica nel cuore storico di Roma, a due passi dal Colosseo.",
       host: "Laura Bianchi",
-      prezzo: 210,
-      disponibilita: "1 – 20 marzo 2026"
+      prezzo: 270,
+      disponibilita: "1 marzo – 20 settembre 2025",
+      citta: "Roma"
     },
     {
-      nome: "Hotel Firenze",
-      inizio: new Date("2026-04-01"),
-      fine: new Date("2026-04-20"),
+      nome: "Hotel Cesare",
+      inizio: new Date("2025-04-01"),
+      fine: new Date("2025-10-20"),
       immagine: "img/roma/casa3a.jpg",
       immagine2: "img/roma/casa3b.jpg",
       immagine3: "img/roma/casa3c.jpg",
       descrizione: "Suite luminosa in stile rinascimentale, ideale per una primavera romana tra arte e cultura.",
       host: "Davide Romano",
-      prezzo: 195,
-      disponibilita: "1 – 20 aprile 2026"
+      prezzo: 230,
+      disponibilita: "1 Aprile – 20 Ottobre 2025",
+      citta: "Roma"
     },
     {
-      nome: "Hotel Milano",
-      inizio: new Date("2026-05-01"),
-      fine: new Date("2026-05-20"),
+      nome: "Hotel Augusto",
+      inizio: new Date("2025-05-01"),
+      fine: new Date("2025-11-20"),
       immagine: "img/roma/casa4a.jpg",
       immagine2: "img/roma/casa4b.jpg",
       immagine3: "img/roma/casa4c.jpg",
       descrizione: "Appartamento di design nel quartiere Prati, perfetto per shopping e vita notturna.",
       host: "Federica Neri",
-      prezzo: 185,
-      disponibilita: "1 – 20 maggio 2026"
+      prezzo: 195,
+      disponibilita: "1 Maggio – 20 Novembre 2025",
+      citta: "Roma"
     },
     {
-      nome: "Hotel Napoli",
-      inizio: new Date("2025-06-01"),
-      fine: new Date("2025-06-20"),
+      nome: "Hotel Ottaviano",
+      inizio: new Date("2025-02-01"),
+      fine: new Date("2025-08-20"),
       immagine: "img/roma/casa5a.jpg",
       immagine2: "img/roma/casa5b.jpg",
       immagine3: "img/roma/casa5c.jpg",
       descrizione: "Camera con balcone fiorito e vista su Trastevere, perfetta per le serate d’estate.",
       host: "Gianni De Luca",
-      prezzo: 175,
-      disponibilita: "1 – 20 giugno 2025"
+      prezzo: 220,
+      disponibilita: "1 Febbraio – 20 Agosto 2025",
+      citta: "Roma"
     },
     {
-      nome: "Hotel Torino",
-      inizio: new Date("2025-07-01"),
-      fine: new Date("2025-07-20"),
+      nome: "Hotel Colosseum",
+      inizio: new Date("2025-05-01"),
+      fine: new Date("2025-11-20"),
       immagine: "img/roma/casa6a.jpg",
       immagine2: "img/roma/casa6b.jpg",
       immagine3: "img/roma/casa6c.jpg",
       descrizione: "Loft climatizzato con arredi moderni e posizione strategica tra Piazza di Spagna e Villa Borghese.",
       host: "Chiara Fontana",
-      prezzo: 220,
-      disponibilita: "1 – 20 luglio 2025"
+      prezzo: 290,
+      disponibilita: "1 Maggio – 20 Novembre 2025",
+      citta: "Roma"
     },
     {
       nome: "Hotel Marittimo",
-      inizio: new Date("2026-03-01"),
-      fine: new Date("2026-03-20"),
+      inizio: new Date("2025-05-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/gallipoli/casa1a.jpg",
       immagine2: "img/gallipoli/casa1b.jpg",
       immagine3: "img/gallipoli/casa1c.jpg",
       descrizione: "Hotel con vista mare, piscina e accesso diretto alla spiaggia di Gallipoli.",
       host: "Alessandro Rizzo",
-      prezzo: 200,
-      disponibilita: "1 – 20 marzo 2026"
+      prezzo: 160,
+      disponibilita: "1 Maggio – 20 Novembre 2025",
+      citta: "Gallipoli"
     },
     {
       nome: "Hotel Salentino",
-      inizio: new Date("2026-04-01"),
-      fine: new Date("2026-04-20"),
+      inizio: new Date("2025-04-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/gallipoli/casa2a.jpg",
       immagine2: "img/gallipoli/casa2b.jpg",
       immagine3: "img/gallipoli/casa2c.jpg",
       descrizione: "Struttura accogliente a pochi passi dal centro storico e dai ristoranti tipici pugliesi.",
       host: "Marta De Santis",
-      prezzo: 185,
-      disponibilita: "1 – 20 aprile 2026"
+      prezzo: 175,
+      disponibilita: "1 Aprile – 20 Settembre 2025",
+      citta: "Gallipoli"
     },
     {
       nome: "Hotel Tramonto Ionico",
-      inizio: new Date("2026-05-01"),
-      fine: new Date("2026-05-20"),
+      inizio: new Date("2025-04-01"),
+      fine: new Date("2025-11-20"),
       immagine: "img/gallipoli/casa3a.jpg",
       immagine2: "img/gallipoli/casa3b.jpg",
       immagine3: "img/gallipoli/casa3c.jpg",
       descrizione: "Camera elegante con terrazza privata e vista spettacolare sul tramonto gallipolino.",
       host: "Gabriele Serra",
       prezzo: 210,
-      disponibilita: "1 – 20 maggio 2026"
+      disponibilita: "1 Aprile – 20 Novembre 2025",
+      citta: "Gallipoli"
     },
     {
       nome: "Hotel Spiaggia Bianca",
       inizio: new Date("2025-06-01"),
-      fine: new Date("2025-06-20"),
+      fine: new Date("2025-09-20"),
       immagine: "img/gallipoli/casa4a.jpg",
       immagine2: "img/gallipoli/casa4b.jpg",
       immagine3: "img/gallipoli/casa4c.jpg",
       descrizione: "Resort moderno direttamente sulla sabbia bianca, ideale per famiglie e coppie.",
       host: "Chiara D'Amico",
-      prezzo: 225,
-      disponibilita: "1 – 20 giugno 2025"
+      prezzo: 180,
+      disponibilita: "1 Giugno – 20 Settembre 2025",
+      citta: "Gallipoli"
     },
     {
       nome: "Hotel Brezza Marina",
-      inizio: new Date("2025-07-01"),
-      fine: new Date("2025-07-20"),
+      inizio: new Date("2025-03-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/gallipoli/casa5a.jpg",
       immagine2: "img/gallipoli/casa5b.jpg",
       immagine3: "img/gallipoli/casa5c.jpg",
       descrizione: "Alloggio con balcone vista mare e colazione inclusa, perfetto per rilassarsi al sole.",
       host: "Luca Ferri",
-      prezzo: 230,
-      disponibilita: "1 – 20 luglio 2025"
+      prezzo: 190,
+      disponibilita: "1 Marzo – 20 Settembre 2025",
+      citta: "Gallipoli"
     },
     {
       nome: "Hotel Riviera del Sole",
-      inizio: new Date("2025-08-01"),
-      fine: new Date("2025-08-20"),
+      inizio: new Date("2025-05-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/gallipoli/casa6a.jpg",
       immagine2: "img/gallipoli/casa6b.jpg",
       immagine3: "img/gallipoli/casa6c.jpg",
       descrizione: "Boutique hotel con piscina panoramica e servizio spiaggia privato sulla costa ionica.",
       host: "Giulia Mancini",
-      prezzo: 240,
-      disponibilita: "1 – 20 agosto 2025"
+      prezzo: 210,
+      disponibilita: "1 Maggio – 20 Settembre 2025",
+      citta: "Gallipoli"
     },
     {
       nome: "Chalet Dolomiti",
-      inizio: new Date("2025-08-01"),
-      fine: new Date("2025-08-20"),
+      inizio: new Date("2025-07-01"),
+      fine: new Date("2025-12-20"),
       immagine: "img/val di fassa/casa1a.jpg",
       immagine2: "img/val di fassa/casa1b.jpg",
       immagine3: "img/val di fassa/casa1c.jpg",
       descrizione: "Chalet di montagna con vista panoramica sulle Dolomiti, ideale per escursioni e relax.",
       host: "Marco Rossi",
-      prezzo: 180,
-      disponibilita: "1 – 20 agosto 2025"
+      prezzo: 250,
+      disponibilita: "1 Luglio – 20 Dicembre 2025",
+      citta: "Val di Fassa"
     },
     {
       nome: "Rifugio Catinaccio",
-      inizio: new Date("2025-09-01"),
-      fine: new Date("2025-09-20"),
+      inizio: new Date("2025-06-01"),
+      fine: new Date("2025-11-20"),
       immagine: "img/val di fassa/casa2a.jpg",
       immagine2: "img/val di fassa/casa2b.jpg",
       immagine3: "img/val di fassa/casa2c.jpg",
       descrizione: "Accogliente rifugio immerso nei boschi, perfetto per chi ama la natura e la tranquillità.",
       host: "Elisa Benedetti",
       prezzo: 175,
-      disponibilita: "1 – 20 settembre 2025"
+      disponibilita: "1 Giugno – 20 Novembre 2025",
+      citta: "Val di Fassa"
     },
     {
       nome: "Alpen Suite Canazei",
-      inizio: new Date("2025-10-01"),
-      fine: new Date("2025-10-20"),
+      inizio: new Date("2025-05-01"),
+      fine: new Date("2025-12-20"),
       immagine: "img/val di fassa/casa3a.jpg",
       immagine2: "img/val di fassa/casa3b.jpg",
       immagine3: "img/val di fassa/casa3c.jpg",
       descrizione: "Suite con spa privata e caminetto, ideale per un soggiorno romantico in autunno.",
       host: "Davide Moreschi",
       prezzo: 195,
-      disponibilita: "1 – 20 ottobre 2025"
+      disponibilita: "1 Maggio – 20 Dicembre 2025",
+      citta: "Val di Fassa"
     },
     {
       nome: "Residenza Latemar",
-      inizio: new Date("2025-11-01"),
+      inizio: new Date("2025-03-01"),
       fine: new Date("2025-11-20"),
       immagine: "img/val di fassa/casa4a.jpg",
       immagine2: "img/val di fassa/casa4b.jpg",
@@ -628,11 +673,12 @@ const localitaDisponibili = [
       descrizione: "Appartamento panoramico tra i boschi, con cucina attrezzata e vista mozzafiato.",
       host: "Serena Fabbri",
       prezzo: 165,
-      disponibilita: "1 – 20 novembre 2025"
+      disponibilita: "1 Marzo – 20 Novembre 2025",
+      citta: "Val di Fassa"
     },
     {
       nome: "Chalet Belvedere",
-      inizio: new Date("2025-12-01"),
+      inizio: new Date("2025-01-01"),
       fine: new Date("2025-12-20"),
       immagine: "img/val di fassa/casa5a.jpg",
       immagine2: "img/val di fassa/casa5b.jpg",
@@ -640,91 +686,99 @@ const localitaDisponibili = [
       descrizione: "Chalet di charme con sauna, immerso nella neve e vicino agli impianti sciistici.",
       host: "Lorenzo Gatti",
       prezzo: 210,
-      disponibilita: "1 – 20 dicembre 2025"
+      disponibilita: "1 Gennaio – 20 Dicembre 2025",
+      citta: "Val di Fassa"
     },
     {
       nome: "Dimora Sassolungo",
-      inizio: new Date("2026-01-01"),
-      fine: new Date("2026-01-20"),
+      inizio: new Date("2025-04-01"),
+      fine: new Date("2025-11-20"),
       immagine: "img/val di fassa/casa6a.jpg",
       immagine2: "img/val di fassa/casa6b.jpg",
       immagine3: "img/val di fassa/casa6c.jpg",
       descrizione: "Dimora elegante con grandi vetrate e vista sul gruppo del Sassolungo innevato.",
       host: "Giada Lorenzi",
       prezzo: 220,
-      disponibilita: "1 – 20 gennaio 2026"
+      disponibilita: "1 Aprile – 20 Novembre 2025",
+      citta: "Val di Fassa"
     },
     {
-      nome: "Rimini Mare",
-      inizio: new Date("2026-01-01"),
-      fine: new Date("2026-01-20"),
+      nome: "Hotel Touring",
+      inizio: new Date("2025-05-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/rimini/casa1a.jpg",
       immagine2: "img/rimini/casa1b.jpg",
       immagine3: "img/rimini/casa1c.jpg",
       descrizione: "Hotel con vista mare, piscina e accesso diretto alla spiaggia di Rimini.",
       host: "Alessandro Rizzo",
       prezzo: 200,
-      disponibilita: "1 – 20 gennaio 2026"
+      disponibilita: "1 Maggio – 20 Settembre 2025",
+      citta: "Rimini"
     },
     {
       nome: "Rimini Sole",
-      inizio: new Date("2026-02-01"),
-      fine: new Date("2026-02-20"),
+      inizio: new Date("2025-04-01"),
+      fine: new Date("2025-10-20"),
       immagine: "img/rimini/casa2a.jpg",
       immagine2: "img/rimini/casa2b.jpg",
       immagine3: "img/rimini/casa2c.jpg",
       descrizione: "Hotel moderno con rooftop bar e vista panoramica sull'Adriatico.",
       host: "Giulia Conti",
       prezzo: 190,
-      disponibilita: "1 – 20 febbraio 2026"
+      disponibilita: "1 Aprile – 20 Ottobre 2025",
+      citta: "Rimini"
     },
     {
       nome: "Blu Adriatico",
-      inizio: new Date("2026-03-01"),
-      fine: new Date("2026-03-20"),
+      inizio: new Date("2025-03-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/rimini/casa3a.jpg",
       immagine2: "img/rimini/casa3b.jpg",
       immagine3: "img/rimini/casa3c.jpg",
       descrizione: "Appartamento a due passi dal mare, perfetto per vacanze primaverili.",
       host: "Luca De Santis",
       prezzo: 180,
-      disponibilita: "1 – 20 marzo 2026"
+      disponibilita: "1 Marzo – 20 Settembre 2025",
+      citta: "Rimini"
     },
     {
       nome: "La Brezza",
-      inizio: new Date("2026-04-01"),
-      fine: new Date("2026-04-20"),
+      inizio: new Date("2025-04-01"),
+      fine: new Date("2025-09-20"),
       immagine: "img/rimini/casa4a.jpg",
       immagine2: "img/rimini/casa4b.jpg",
       immagine3: "img/rimini/casa4c.jpg",
       descrizione: "Struttura tranquilla con giardino privato e accesso veloce alla spiaggia.",
       host: "Francesca Morelli",
       prezzo: 175,
-      disponibilita: "1 – 20 aprile 2026"
+      disponibilita: "1 Aprile – 20 Settembre 2025",
+      citta: "Rimini"
     },
     {
       nome: "Villa d’Onda",
       inizio: new Date("2025-05-01"),
-      fine: new Date("2025-05-20"),
+      fine: new Date("2025-09-20"),
       immagine: "img/rimini/casa5a.jpg",
       immagine2: "img/rimini/casa5b.jpg",
       immagine3: "img/rimini/casa5c.jpg",
       descrizione: "Ampia villa con patio esterno, ideale per famiglie e gruppi di amici.",
       host: "Matteo Rinaldi",
       prezzo: 220,
-      disponibilita: "1 – 20 maggio 2025"
+      disponibilita: "1 Maggio – 20 Settembre 2025",
+      citta: "Rimini"
     },
     {
       nome: "Oasi Marina",
       inizio: new Date("2025-06-01"),
-      fine: new Date("2025-06-20"),
+      fine: new Date("2025-10-20"),
       immagine: "img/rimini/casa6a.jpg",
       immagine2: "img/rimini/casa6b.jpg",
       immagine3: "img/rimini/casa6c.jpg",
       descrizione: "Resort con piscina, spa e spiaggia privata per un'esperienza di puro relax.",
       host: "Elena Berti",
-      prezzo: 240,
-      disponibilita: "1 – 20 giugno 2025"
+      prezzo: 250,
+      disponibilita: "1 Giugno – 20 Ottobre 2025",
+      citta: "Rimini"
     },
   ];
 
