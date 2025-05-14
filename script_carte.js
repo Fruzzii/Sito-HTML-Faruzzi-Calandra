@@ -243,9 +243,7 @@ const criteri = [
               </div>
             </div>
             <div class="dettagli">
-              <p></p>
               <a href="${d.nome}.html">${d.nome}</a>
-              <p></p>
               <p>${d.descrizione}</p>
               <p></p>
               <p><span class="prezzo-badge">Da ${d.prezzo}</span></p>
