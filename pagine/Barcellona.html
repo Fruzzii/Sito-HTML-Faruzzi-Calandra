@@ -2,20 +2,20 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>New York</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Barcellona</title>
+  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="video-header">
         <video autoplay muted loop playsinline class="header-video">
-          <source src="video/newyork.mp4" type="video/mp4">
+          <source src="../video/barcellona.mp4" type="video/mp4">
           Il tuo browser non supporta i video.
         </video>
 
         <section class="intro overlay-text">
-          <h2>New York</h2>
-          <p>La Grande Mela: divertimento, cultura e shopping in ogni angolo.</p>
+          <h2>Barcellona</h2>
+          <p>Città vivace, arte e cultura a ogni angolo.</p>
         </section>
   
       </header>
@@ -23,13 +23,37 @@
   
 
   <div class="posti">
-    <div class="posto" data-index="18">
+    <div class="posto" data-index="0">
+      <div class="immaginiposti-carousel">
+        <div class="carousel-wrapper">
+          <div class="carousel" id="carousel1">
+            <img src="../img/barcellona/casa1a.jpg" alt="Barcellona 1">
+            <img src="../img/barcellona/casa1b.jpg" alt="Barcellona 2">
+            <img src="../img/barcellona/casa1c.jpg" alt="Barcellona 3">
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button onclick="prevSlide('carousel1')">❰</button>
+          <button onclick="nextSlide('carousel1')">❱</button>
+        </div>
+      </div>
+      <div class="info">
+        <p><strong>Gaudì Boutique</strong></p>
+        <p>Bilocale</p>
+        <p>Carmen Torres</p>
+        <p><span class="prezzo-badge">💶 €210 a notte</span></p>
+        <p><em>Disponibile: 15 giugno - 31 agosto 2025</em></p>
+        <button class="bottone-prenota">Prenota</button>
+      </div>
+    </div>
+    
+    <div class="posto" data-index="1">
       <div class="immaginiposti-carousel">
         <div class="carousel-wrapper">
           <div class="carousel" id="carousel2">
-            <img src="img/new york/casa1a.jpg" alt="Newyork 1">
-            <img src="img/new york/casa1b.jpg" alt="Newyork 2">
-            <img src="img/new york/casa1c.jpg" alt="Newyork 3">
+            <img src="../img/barcellona/casa2a.jpg" alt="Barcellona 1">
+            <img src="../img/barcellona/casa2b.jpg" alt="Barcellona 2">
+            <img src="../img/barcellona/casa2c.jpg" alt="Barcellona 3">
           </div>
         </div>
         <div class="carousel-controls">
@@ -38,22 +62,22 @@
         </div>
       </div>
       <div class="info">
-        <p><strong>Hotel New York</strong></p>
+        <p><strong>Appartamento Costa del Sole</strong></p>
         <p>Trilocale</p>
-        <p>Thomas Harrison</p>
-        <p><span class="prezzo-badge">💶 €515 a notte</span></p>
-        <p><em>Disponibile: 20 Maggio - 05 Novembre 2025</em></p>
+        <p>Haruki Sato</p>
+        <p><span class="prezzo-badge">💶 €190 a notte</span></p>
+        <p><em>Disponibile: 1 Marzo - 30 Giugno 2025</em></p>
         <button class="bottone-prenota">Prenota</button>
       </div>
     </div>
-
-    <div class="posto" data-index="19">
+    
+    <div class="posto" data-index="2">
       <div class="immaginiposti-carousel">
         <div class="carousel-wrapper">
           <div class="carousel" id="carousel3">
-            <img src="img/new york/casa2a.jpg" alt="Newyork 1">
-            <img src="img/new york/casa2b.jpg" alt="Newyork 2">
-            <img src="img/new york/casa2c.jpg" alt="Newyork 3">
+            <img src="../img/barcellona/casa3a.jpg" alt="Barcellona 1">
+            <img src="../img/barcellona/casa3b.jpg" alt="Barcellona 2">
+            <img src="../img/barcellona/casa3c.jpg" alt="Barcellona 3">
           </div>
         </div>
         <div class="carousel-controls">
@@ -62,22 +86,22 @@
         </div>
       </div>
       <div class="info">
-        <p><strong>Manhattan Loft</strong></p>
-        <p>Bilocale</p>
-        <p>Jonathan Taylor</p>
-        <p><span class="prezzo-badge">💶 €400 a notte</span></p>
-        <p><em>Disponibile: 15 Giugno - 05 Ottobre 2025</em></p>
+        <p><strong>Casa Rambla</strong></p>
+        <p>Monolocale</p>
+        <p>Luca Neri</p>
+        <p><span class="prezzo-badge">💶 €170 a notte</span></p>
+        <p><em>Disponibile: 15 Giugno - 15 Settembre 2025</em></p>
         <button class="bottone-prenota">Prenota</button>
       </div>
     </div>
-     
-    <div class="posto" data-index="20">
+    
+    <div class="posto" data-index="3">
       <div class="immaginiposti-carousel">
         <div class="carousel-wrapper">
           <div class="carousel" id="carousel4">
-            <img src="img/new york/casa3a.jpg" alt="Newyork 1">
-            <img src="img/new york/casa3b.jpg" alt="Newyork 2">
-            <img src="img/new york/casa3c.jpg" alt="Newyork 3">
+            <img src="../img/barcellona/casa4a.jpg" alt="Barcellona 1">
+            <img src="../img/barcellona/casa4b.jpg" alt="Barcellona 2">
+            <img src="../img/barcellona/casa4c.jpg" alt="Barcellona 3">
           </div>
         </div>
         <div class="carousel-controls">
@@ -86,22 +110,22 @@
         </div>
       </div>
       <div class="info">
-        <p><strong>Brooklyn Heights Retreat</strong></p>
-        <p>Trilocale</p>
-        <p>Amanda Richards</p>
-        <p><span class="prezzo-badge">💶 €390 a notte</span></p>
-        <p><em>Disponibile: 1 Gennaio - 30 Settembre 2025</em></p>
+        <p><strong>Vista Barcellona</strong></p>
+        <p>Bilocale</p>
+        <p>Marta Garcia</p>
+        <p><span class="prezzo-badge">💶 €195 a notte</span></p>
+        <p><em>Disponibile: 1 Giugno - 30 Agosto 2025</em></p>
         <button class="bottone-prenota">Prenota</button>
       </div>
     </div>
-
-    <div class="posto" data-index="21">
+    
+    <div class="posto" data-index="4">
       <div class="immaginiposti-carousel">
         <div class="carousel-wrapper">
           <div class="carousel" id="carousel5">
-            <img src="img/new york/casa4a.jpg" alt="Newyork 1">
-            <img src="img/new york/casa4b.jpg" alt="Newyork 2">
-            <img src="img/new york/casa4c.jpg" alt="Newyork 3">
+            <img src="../img/barcellona/casa5a.jpg" alt="Barcellona 1">
+            <img src="../img/barcellona/casa5b.jpg" alt="Barcellona 2">
+            <img src="../img/barcellona/casa5c.jpg" alt="Barcellona 3">
           </div>
         </div>
         <div class="carousel-controls">
@@ -110,22 +134,22 @@
         </div>
       </div>
       <div class="info">
-        <p><strong>Central Park Apartments</strong></p>
-        <p>Bilocale</p>
-        <p>David Cohen</p>
-        <p><span class="prezzo-badge">💶 €300 a notte</span></p>
-        <p><em>Disponibile: 25 Aprile - 15 Dicembre 2025</em></p>
+        <p><strong>Appartamento Mediterraneo</strong></p>
+        <p>Monolocale</p>
+        <p>Pierre Lafevre</p>
+        <p><span class="prezzo-badge">💶 €240 a notte</span></p>
+        <p><em>Disponibile: 15 Febbraio - 31 Agosto 2025</em></p>
         <button class="bottone-prenota">Prenota</button>
       </div>
     </div>
-
-    <div class="posto" data-index="22">
+    
+    <div class="posto" data-index="5">
       <div class="immaginiposti-carousel">
         <div class="carousel-wrapper">
           <div class="carousel" id="carousel6">
-            <img src="img/new york/casa5a.jpg" alt="Newyork 1">
-            <img src="img/new york/casa5b.jpg" alt="Newyork 2">
-            <img src="img/new york/casa5c.jpg" alt="Newyork 3">
+            <img src="../img/barcellona/casa6a.jpg" alt="Barcellona 1">
+            <img src="../img/barcellona/casa6b.jpg" alt="Barcellona 2">
+            <img src="../img/barcellona/casa6c.jpg" alt="Barcellona 3">
           </div>
         </div>
         <div class="carousel-controls">
@@ -134,35 +158,11 @@
         </div>
       </div>
       <div class="info">
-        <p><strong>Soho Design Studio</strong></p>
+        <p><strong>La Sagrada Stays</strong></p>
         <p>Trilocale</p>
-        <p>Emily Johnson</p>
-        <p><span class="prezzo-badge">💶 €450 a notte</span></p>
-        <p><em>Disponibile: 01 Marzo - 20 Ottobre 2025</em></p>
-        <button class="bottone-prenota">Prenota</button>
-      </div>
-    </div>
-
-    <div class="posto" data-index="23">
-      <div class="immaginiposti-carousel">
-        <div class="carousel-wrapper">
-          <div class="carousel" id="carousel7">
-            <img src="img/new york/casa6a.jpg" alt="Newyork 1">
-            <img src="img/new york/casa6b.jpg" alt="Newyork 2">
-            <img src="img/new york/casa6c.jpg" alt="Newyork 3">
-          </div>
-        </div>
-        <div class="carousel-controls">
-          <button onclick="prevSlide('carousel7')">❰</button>
-          <button onclick="nextSlide('carousel7')">❱</button>
-        </div>
-      </div>
-      <div class="info">
-        <p><strong>Times Square Luxury</strong></p>
-        <p>Quadrilocale</p>
-        <p>Sophia Williams</p>
-        <p><span class="prezzo-badge">💶 €700 a notte</span></p>
-        <p><em>Disponibile: 10 Giugno - 30 Settembre 2025</em></p>
+        <p>Sofia Martinez</p>
+        <p><span class="prezzo-badge">💶 €215 a notte</span></p>
+        <p><em>Disponibile: 1 Agosto - 15 Novembre 2025</em></p>
         <button class="bottone-prenota">Prenota</button>
       </div>
     </div>
@@ -210,7 +210,7 @@
           const hotelIndex = posto.getAttribute("data-index");
 
         // Redireziona alla pagina dettagli con l'indice corretto
-          window.location.href = `dettagli_hotel.html?index=${hotelIndex}`;
+          window.location.href = `../pagine/dettagli_hotel.html?index=${hotelIndex}`;
         });
       });
     });
