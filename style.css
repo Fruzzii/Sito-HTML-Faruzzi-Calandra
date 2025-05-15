@@ -157,6 +157,7 @@ body {
     justify-content: center;
     color: white;
     gap:20px;
+    padding-bottom: 15px;
   }
   .Form0{
     display: flex;
@@ -170,34 +171,75 @@ body {
     justify-content: center;
     color: white;
     gap:20px;
+    padding-bottom: 15px;
   }
   
   
-  .date input {
+  .Form input {
     padding: 10px;
     margin: 10px;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 5px;
 
   }
   
-  .date button {
+  .Form button {
     padding: 10px 20px;
     background-color: #7b90d5;
     color: white;
     border: none;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
 
   }
-  .date button:hover {
+  .Form button:hover {
     background-color: #6176bc;
   }
-  .date h2{
+  /* .date h2{
     color:white
+  } */
+  .Form label{
+    color:white
+    
   }
-  .date label{
+  .Form1{
+    display: flex;
+    width: 100%;
+    text-align: center;
+
+
+    background-color: #171c4b;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap:20px;
+  }
+  .Form1 input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+  }
+  
+  .Form1 button {
+    padding: 10px 20px;
+    background-color: #7b90d5;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  .Form1 button:hover {
+    background-color: #6176bc;
+  }
+  /* .date h2{
+    color:white
+  } */
+  .Form1 label{
     color:white
     
   }
