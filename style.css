@@ -973,7 +973,7 @@ body {
     -webkit-user-drag: none; 
   }
 
-ì
+
   
   .card:hover {
     transform: scale(1.05);
@@ -1094,10 +1094,17 @@ body {
 
     }
 
-    footer .app img{
+    footer .app img {
       height: 100px;
-      width: auto;      
+      width: auto;
+      transition: transform 0.3s ease; /* transizione fluida */
     }
+
+    footer .app img:hover {
+      transform: scale(1.2); /* ingrandisce del 20% */
+    }
+
+    
 
     footer .credit{
       
@@ -1107,6 +1114,6 @@ body {
     }
 
     footer .credit p{
-      font-size: 20px;
+      font-size: 17px;
       color: white;
     }
