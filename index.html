@@ -44,23 +44,32 @@
       <p></p>
     </div>
     <img src="img/header.jpg" alt="" class="immagine_iniziale">
-
-    <section class="date">
-      <h2>Seleziona le date del tuo viaggio</h2>
-      <label for="start-date">Data di partenza:</label>
-      <input type="date" id="start-date">
+    <div class="Form0"><p class="seleziona">Seleziona le date del tuo viaggio</p></div>
+    <div class="Form">
     
-      <label for="end-date">Data di ritorno:</label>
-      <input type="date" id="end-date">
-
-      <label for="city">Città:</label>
-      <input type="text" id="city" placeholder="Es. Roma, Parigi, New York">
-    
-      <button onclick="mostraLocalitàDisponibili()">Scopri dove puoi andare</button>
+      <div>
+        
+        <label for="start-date">Data di partenza:</label>
+        <input type="date" id="start-date">
+      </div>
+      <div>
       
-      <div id="localita-risultato" class="localita-risultato"></div>
+        <label for="end-date">Data di ritorno:</label>
+        <input type="date" id="end-date">
+      </div>
+      <div>
+        <div class="Form">
+          <div>
+            <label for="city">Città:</label>
+            <input type="text" id="city" placeholder="Es. Roma, Parigi, New York">
+          </div>
+          <button onclick="mostraLocalitàDisponibili()">Scopri dove puoi andare</button>
+        </div>
+      </div>
+        <div id="localita-risultato" class="localita-risultato"></div>
+      </section>
+    </div>
     
-    </section>
     <section class="destinazioni">
       <h2>Le nostre località più richieste</h2>
     </section>

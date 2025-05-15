@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 
@@ -136,18 +137,48 @@ body {
     object-fit: cover;
 
   }
-  .date {
+  .seleziona{
     text-align: center;
-    padding: 30px;
+    align-items: center;
+    color:white;
     background-color: #171c4b;
-    width: 100%;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
   }
+  .Form{
+    display: flex;
+    width: 100%;
+    text-align: center;
+
+
+    background-color: #171c4b;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap:20px;
+  }
+  .Form0{
+    display: flex;
+    width: 100%;
+    text-align: center;
+
+    padding-top: 20px;
+
+    background-color: #171c4b;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap:20px;
+  }
+  
   
   .date input {
     padding: 10px;
     margin: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
+
   }
   
   .date button {
@@ -157,7 +188,8 @@ body {
     border: none;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
+
   }
   .date button:hover {
     background-color: #6176bc;
@@ -167,6 +199,7 @@ body {
   }
   .date label{
     color:white
+    
   }
   .destinazioni {
       display: flex;
@@ -178,7 +211,7 @@ body {
     }
   .contenuto {
       display: flex;
-      gap: 0px;
+      gap: 20px;
       align-items: center;
       text-align: left;
       padding: 20px;
@@ -261,7 +294,7 @@ body {
     }
    
     .dettagli p:last-child {
-      text-align: right;
+      text-align: center;
 
     }
     .dettagli p:nth-child(2) {
@@ -445,6 +478,7 @@ body {
   .menu ul {
     flex-direction: column;
     padding: 10px 20px;
+    text-align: center;
   }
 
   .menu ul li {
@@ -486,6 +520,7 @@ body {
       /* padding: 5px 4px; */
       margin: 5px;
       margin-top: 10px;
+      gap: 0px;
       
     }
     .contenuto p {
@@ -730,7 +765,11 @@ body {
     gap: 20px;
     margin-top: 20px;
   }
-  
+  h1{
+    font-size: 50px;
+    font-family: 'Chewy', cursive;
+    
+  }
   #cardContainer {
     position: relative;
     height: 450px;
@@ -738,8 +777,9 @@ body {
     width: 320px;
   }
   .card {
-    width: 100%;
+    
     height: 100%;
+    width: auto;
     background: white;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -750,21 +790,24 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, opacity 0.3s ease;
     user-select: none;
+ 
   }
   
   .card img {
-    width: 100%;
-    height: 60%;
+    width: 320px;
+    height: 450px;
     object-fit: cover;
+    position: relative;
   }
   
   .card-text {
     padding: 20px;
-    padding-top: 67px;
+    padding-top: 330px;
+    position: absolute;
     font-size: 35px;
     text-align: center;
-    font-family: 'Raleway', sans-serif, cursive;
-    color:black
+    font-family: 'Chewy', cursive;
+    color:white
   }
   
   #result {

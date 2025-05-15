@@ -1,5 +1,5 @@
 const criteri = [
-    { testo: "Vicino al mare", img: "img/mare.jpg" },
+    { testo: "Vicino al mare", img: "mare.jpg" },
     { testo: "Per famiglie", img: "img/famiglie.jpg" },
     { testo: "Movida notturna", img: "img/movida.jpg" },
     { testo: "Natura e trekking", img: "img/trekking.jpg" },
