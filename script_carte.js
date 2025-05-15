@@ -228,30 +228,32 @@ const criteri = [
   
       match.forEach(d => {
         resultDiv.innerHTML += `
-          <div class="contenuto">
-            <div class="immagini">
-              <div class="mantieni-misure">
-                <img src="${d.img}" alt="${d.nome}" class="immagine-principale">
+          <a href="${d.nome}.html" class="linkswipe">
+            <div class="contenuto">
+              <div class="immagini">
+                <div class="mantieni-misure">
+                  <img src="${d.img}" alt="${d.nome}" class="immagine-principale">
+                </div>
+                <div class="immagini-secondarie">
+                  <div class="mantieni-misure">
+                    <img src="${d.img2}" alt="${d.nome}" class="immagine-secondaria">
+                  </div>
+                  <div class="mantieni-misure">
+                    <img src="${d.img3}" alt="${d.nome}" class="immagine-secondaria">
+                  </div>
+                </div>
               </div>
-              <div class="immagini-secondarie">
-                <div class="mantieni-misure">
-                  <img src="${d.img2}" alt="${d.nome}" class="immagine-secondaria">
-                </div>
-                <div class="mantieni-misure">
-                  <img src="${d.img3}" alt="${d.nome}" class="immagine-secondaria">
-                </div>
+              <div class="dettagli">
+                <p><span class="nomeloc">${d.nome}</span></p>
+                <p>${d.descrizione}</p>
+                <p></p>
+                <p><span class="prezzo-badge">Da ${d.prezzo}</span></p>
+                <p></p>
+                <p><em>Periodo: ${d.periodo}</em></p>
+                
               </div>
             </div>
-            <div class="dettagli">
-              <a href="${d.nome}.html">${d.nome}</a>
-              <p>${d.descrizione}</p>
-              <p></p>
-              <p><span class="prezzo-badge">Da ${d.prezzo}</span></p>
-              <p></p>
-              <p><em>Periodo: ${d.periodo}</em></p>
-              
-            </div>
-          </div>
+          </a>
         `;
       });
     } else {
