@@ -106,8 +106,9 @@ body {
     flex-direction: row;
     text-align: center;
     align-items: center;
-    gap:20px;
+    gap:2%;
     justify-content: space-between;
+    padding-right: 8%;
     
   }
   .riga p{
@@ -126,11 +127,12 @@ body {
   .riga p:nth-child(4),
   .riga p:nth-child(5),
   .riga p:nth-child(6) {
-    flex: 0 0 9%;
+    /* flex: 0 0 9%; */
+    width: fit-content;
   }
-  .riga p:nth-child(7){
-    flex: 0 0 10%;
-  }
+  /* .riga p:nth-child(7){
+    flex: 0 0 7%;
+  } */
   .immagine_iniziale{
     width: 100%;
     height: auto;
@@ -488,9 +490,14 @@ body {
     /* align-items: stretch; */
 
   }
+@media (min-width:768px) and (max-width: 1100px) {
+  .Form{
+    flex-direction: column;
+  }
 
+}
 /* Mobile styles */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   *{box-sizing: border-box;}
 
   .menu {
@@ -526,7 +533,7 @@ body {
   .menu ul li {
     padding: 10px 0;
   }
-   .mobile-only {
+  .mobile-only {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -538,67 +545,105 @@ body {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    padding-bottom: 5px;}
+    padding-bottom: 5px;
+  }
+  
+  .fruzzi p:nth-child(4) {
+    background-image: none;
+  }
+  .fruzzi p:nth-child(5) {
+    background-image: none;  
+  }
+  .dettagli p:last-child {
+    text-align: center;
+
+  }
+  .Form{
+    flex-direction: column;
+  }
+  .destinazioni{
+    width: 100%;
+    align-items: center;
+
     
-    .fruzzi p:nth-child(4) {
-      background-image: none;
-    }
-    .fruzzi p:nth-child(5) {
-      background-image: none;  
-    }
-    .dettagli p:last-child {
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .contenuto {
+    box-sizing: border-box;
+    width: 95%;
+    /* padding: 5px 4px; */
+    margin: 5px;
+    margin-top: 10px;
+    gap: 0px;
+    
+  }
+  .contenuto p {
+    font-size: 18px;
+  }
+  .contenuto p strong {
+    font-size: 30px;
+  }
+  .contenuto1 {
+    box-sizing: border-box;
+    width: 95%;
+    flex-direction: column;
+    /* padding: 5px 4px; */
+    margin: 5px;
+    margin-top: 10px;
+    gap: 0px;
+    
+  }
+  .contenuto1 p {
+    font-size: 18px;
+  }
+  .contenuto1 p strong {
+    font-size: 30px;
+  }
+  .prenotazione-info {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       text-align: center;
-
+      max-width: fit-content;
     }
-    .destinazioni{
-      width: 100%;
-      align-items: center;
-
-      
+   
+    .prenotazione-info p:nth-child(2) {
+      padding-left: 20px;
+      padding-right: 20px;
     }
-    .contenuto {
-      box-sizing: border-box;
-      width: 95%;
-      /* padding: 5px 4px; */
-      margin: 5px;
-      margin-top: 10px;
-      gap: 0px;
-      
-    }
-    .contenuto p {
-      font-size: 18px;
-    }
-    .contenuto p strong {
-      font-size: 30px;
-    }
-    .immagini {
-      display: flex;
-      flex:0 0 50%;
-      flex-direction: column;
-      align-items: center;
-      gap:10px;
-    }
-    .immagini-secondarie {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 0px;
-      
-    }
-    .immagine-principale {
-      width: 70%;
-      height: auto;
-    }
-    .immagine-secondaria {
-      width: 70%;
-      height: auto;
-    }
-    .dettagli{
-      /* padding: 5px 2px; */
-      margin:0px;
-      flex:0 0 50%;
-    }
-    #result {
+  .immagini {
+    display: flex;
+    flex:0 0 50%;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+  }
+  .immagini-secondarie {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0px;
+    
+  }
+  .immagine-principale {
+    width: 70%;
+    height: auto;
+  }
+  .immagine-secondaria {
+    width: 70%;
+    height: auto;
+  }
+  .dettagli{
+    /* padding: 5px 2px; */
+    margin:0px;
+    flex:0 0 50%;
+  }
+  #result {
     display: none;
     box-sizing: border-box;
     width: 95%;
@@ -636,9 +681,9 @@ body {
     /* align-items: stretch; */
 
   }
-    
-    
-    
+  .titoletto{
+    text-align: center;
+  }
 }
 .disponibili{
     text-align: center;
@@ -772,7 +817,36 @@ body {
     font-size: 40px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif, cursive;
+    text-align: center;
   }
+  .contenuto1 {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      text-align: left;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      
+    }
+    .contenuto1 p{
+      font-size: 24px;
+      color: #333;
+      font-family: 'Raleway', sans-serif, cursive;
+    }
+    .contenuto1 p strong {
+      color: #000000; 
+      font-size: 40px;
+    }
+    .contenuto1 em {
+      color: #555;
+      font-style: italic;
+      font-size: 14px;
+    }
 .prenotazione-info {
       flex: 2;
       display: flex;
@@ -785,6 +859,7 @@ body {
       padding-left: 20px;
       padding-right: 20px;
     }
+    
 
     .localita-risultato ul {
     list-style: none;
