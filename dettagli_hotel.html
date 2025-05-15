@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Dettagli Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    label, input {
+      display: block;
+      margin: 10px 0;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+    .input-group label {
+      margin-bottom: 0.25rem;
+      font-weight: 500;
+      color: #333;
+    }
+  </style>
+  <script src="script_date.js"></script>
+</head>
+<body>
+  <p class="titoletto"><strong>Prenotazione per <span id="nomeHotel">...</span></strong></p>
+  <section class="destinazioni">
+    <div class="container">
+      <div class="immagini">
+        <img id="immagineHotel" src="" alt="Hotel" class="immagine-principale" />
+      </div>
+      <div class="prenotazione-info">
+        <p><span id="descrizioneHotel">...</span></p>
+        <p>Host: <span id="hostHotel">...</span></p>
+        <p>Costo per notte: <span class="prezzo-badge"><span>€</span><span id="prezzoHotel">...</span></span></p>
+        <p><em>Disponibile: <span id="disponibilitaHotel"></span></em></p>
+      </div> 
+    </div>
+  </section>
+  <form id="formPrenotazione">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" required>
+
+    <label for="giorni">Numero di giorni:</label>
+    <input type="number" id="giorni" name="giorni" min="1" required>
+
+    <button type="submit">Conferma Prenotazione</button>
+  </form>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Recupera i parametri dall'URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const index = urlParams.get("index");
+
+      if (!index || isNaN(index)) {
+        alert("Dati non validi.");
+        window.location.href = "index.html"; // Torna indietro se non valido
+        return;
+      }
+
+      // Recupera i dettagli dell'hotel dall'array localitaDisponibili
+      const hotel = localitaDisponibili[index];
+
+      if (!hotel) {
+        alert("Hotel non trovato.");
+        window.location.href = "index.html"; 
+        return;
+      }
+
+      // Popola la pagina con i dati dell'hotel
+      document.getElementById("nomeHotel").textContent = hotel.nome;
+      document.getElementById("hostHotel").textContent = hotel.host;
+      document.getElementById("prezzoHotel").textContent = hotel.prezzo;
+      document.getElementById("descrizioneHotel").textContent = hotel.descrizione;
+      document.getElementById("disponibilitaHotel").textContent = hotel.disponibilita;
+      document.getElementById("immagineHotel").src = hotel.immagine;
+      document.getElementById("immagineHotel").alt = hotel.nome;
+    });
+  </script>
+  <script>
+    let hotelSelezionato;
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const index = urlParams.get("index");
+
+      if (!index || isNaN(index)) {
+        alert("Dati non validi.");
+        window.location.href = "index.html";
+        return;
+      }
+
+      hotelSelezionato = localitaDisponibili[index];
+
+      if (!hotelSelezionato) {
+        alert("Hotel non trovato.");
+        window.location.href = "index.html"; 
+        return;
+      }
+
+      // Popola la pagina con i dati dell'hotel
+      document.getElementById("nomeHotel").textContent = hotelSelezionato.nome;
+      document.getElementById("hostHotel").textContent = hotelSelezionato.host;
+      document.getElementById("prezzoHotel").textContent = hotelSelezionato.prezzo;
+      document.getElementById("descrizioneHotel").textContent = hotelSelezionato.descrizione;
+      document.getElementById("disponibilitaHotel").textContent = hotelSelezionato.disponibilita;
+      document.getElementById("immagineHotel").src = hotelSelezionato.immagine;
+      document.getElementById("immagineHotel").alt = hotelSelezionato.nome;
+    });
+
+    document.getElementById("formPrenotazione").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const cognome = document.getElementById("cognome").value.trim();
+      const giorni = parseInt(document.getElementById("giorni").value.trim(), 10);
+
+      if (!nome || !cognome || isNaN(giorni) || giorni < 1) {
+        alert("Compila correttamente tutti i campi.");
+        return;
+      }
+
+      const costoTotale = (hotelSelezionato.prezzo * giorni).toFixed(2);
+
+      const prenotazioni = JSON.parse(localStorage.getItem("prenotazioni")) || [];
+
+      prenotazioni.push({
+        localita: hotelSelezionato.nome,
+        giorni: giorni,
+        costoTotale: costoTotale,
+        nome: nome,
+        cognome: cognome
+      });
+
+      localStorage.setItem("prenotazioni", JSON.stringify(prenotazioni));
+
+      alert(`Prenotazione per ${hotelSelezionato.nome} (${nome} ${cognome}) di ${giorni} giorni al costo totale di €${costoTotale} salvata!`);
+      window.location.href = "riepilogo.html";
+    });
+  </script>
+
+</body>
+</html>

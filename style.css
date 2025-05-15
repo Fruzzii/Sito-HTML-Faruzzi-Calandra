@@ -915,3 +915,30 @@ body {
       color: white;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
+    .container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      text-align: left;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    .container p{
+      font-size: 24px;
+      color: #333;
+      font-family: 'Raleway', sans-serif, cursive;
+    }
+    .container p strong {
+      color: #000000; 
+      font-size: 40px;
+    }
+    .container em {
+      color: #555;
+      font-style: italic;
+      font-size: 14px;
+    }

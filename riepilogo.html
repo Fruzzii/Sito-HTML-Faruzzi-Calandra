@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Riepilogo Prenotazioni</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .vuoto {
+      color: #777;
+      font-style: italic;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Riepilogo Prenotazioni</h2>
+
+  <div id="contenitorePrenotazioni">
+    <!-- La tabella con le prenotazioni verrà generata qui -->
+  </div>
+
+  <script>
+    const contenitore = document.getElementById('contenitorePrenotazioni');
+    const prenotazioni = JSON.parse(localStorage.getItem('prenotazioni')) || [];
+
+    if (prenotazioni.length === 0) {
+      contenitore.innerHTML = '<p class="vuoto">Nessuna prenotazione trovata.</p>';
+    } else {
+      let html = `
+        <table>
+          <thead>
+            <tr>
+              <th>Località</th>
+              <th>Giorni</th>
+              <th>Nome</th>
+              <th>Cognome</th>
+              <th>Costo Totale</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      prenotazioni.forEach(p => {
+        html += `<tr>
+                  <td>${p.localita}</td>
+                  <td>${p.giorni}</td>
+                  <td>${p.nome}</td>
+                  <td>${p.cognome}</td>
+                  <td>€${p.costoTotale}</td>
+                </tr>`;
+      });
+
+      html += `</tbody></table>
+        <button onclick="cancellaPrenotazioni()">Cancella tutte le prenotazioni</button>
+      `;
+
+      contenitore.innerHTML = html;
+    }
+
+    function cancellaPrenotazioni() {
+      if (confirm("Sei sicuro di voler cancellare tutte le prenotazioni?")) {
+        localStorage.removeItem('prenotazioni');
+        location.reload();
+      }
+    }
+  </script>
+</body>
+</html>
